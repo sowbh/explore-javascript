@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: blanchedalmond;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+        // 1. Create an unordered list with 5 list items
+        let ul = document.createElement("ul");
+        for (let i = 1; i <= 5; i++) {
+            let li = document.createElement("li");
+            li.innerText = "List item " + i;
+            ul.appendChild(li);
+        }
+        document.body.appendChild(ul);
+
+        // 2. Create a paragraph inside a div
+        let div1 = document.createElement("div");
+        let p1 = document.createElement("p");
+        p1.innerText = "This is a paragraph inside a div.";
+        div1.appendChild(p1);
+        document.body.appendChild(div1);
+
+        // 3. Create a div with a heading and a paragraph
+        let div2 = document.createElement("div");
+        let h1 = document.createElement("h1");
+        h1.innerText = "This is a heading";
+        let p2 = document.createElement("p");
+        p2.innerText = "This is a paragraph under the heading.";
+        div2.appendChild(h1);
+        div2.appendChild(p2);
+        document.body.appendChild(div2);
+
+        // 4. Create a table with one row and three cells
+        let table = document.createElement("table");
+        let tr = document.createElement("tr");
+        for (let j = 1; j <= 3; j++) {
+            let td = document.createElement("td");
+            td.innerText = "Cell " + j;
+            tr.appendChild(td);
+        }
+        table.appendChild(tr);
+        document.body.appendChild(table);
+
+        // 5. Create a div with five buttons
+        let div3 = document.createElement("div");
+        for (let k = 1; k <= 5; k++) {
+            let button = document.createElement("button");
+            button.innerText = "Button " + k;
+            div3.appendChild(button);
+        }
+        document.body.appendChild(div3);
+    </script>
+
+</body>
+
+</html>

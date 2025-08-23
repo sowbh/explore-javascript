@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: black;
+            color: white;
+            font-size: 2rem;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <div>
+        <p>Hello There</p>
+    </div>
+    <!-- <script src="index.js"></script> -->
+
+    <script>
+        console.log(document);
+        console.log(document.head);
+        console.log(document.body);
+        console.log(document.title);
+        console.log(document.body.firstChild);
+        console.log(document.URL);
+
+        // to change the title of the document dynamically
+        document.title = "DOM";
+    </script>
+
+    <!-- 2 -->
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#">3</a>
+
+    <script>
+        // console.log(document.links);
+        let links = document.links;
+        for(let link of links){
+            console.log(link);
+            console.log(link.innerText);
+        }
+    </script>
+
+    <!-- 3 -->
+    <!-- to create an element -->
+    <script>
+        let div = document.createElement("div");
+        console.log(div);
+    
+        div.innerText = "Hello World";
+        console.log(div);
+
+        document.body.appendChild(div);
+
+    </script>
+
+    <!-- 4 -->
+    <script>
+        let p = document.createElement("p");
+        p.innerText = "Hey!";
+
+        document.body.appendChild(p);
+    </script>
+
+</body>
+</html>
