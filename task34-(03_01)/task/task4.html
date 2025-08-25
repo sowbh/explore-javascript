@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 4 - Product Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      padding: 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #333;
+      text-align: center;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr; /* mobile: 1 card per row */
+      gap: 20px;
+    }
+
+    /* Tablet view */
+    @media (min-width: 600px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Desktop view */
+    @media (min-width: 900px) {
+      .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 6px 12px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .card p {
+      margin-bottom: 8px;
+      color: #555;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #27ae60;
+    }
+
+    .category {
+      font-style: italic;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <h1>Our Products</h1>
+  <div id="products" class="grid-container"></div>
+
+  <script src="./task4.js"></script>
+</body>
+</html>

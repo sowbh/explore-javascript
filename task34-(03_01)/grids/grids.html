@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .grid-container{
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 10px;
+        }
+
+        .item{
+            padding: 10px;
+            font-size: calc(1.2rem + 0.5vw);
+            text-align: left;
+
+            /* Primary color = #61A8BE; Secondary color = #FFFFFE; Accent color=#D678A5 */
+            background-color: #61A8BE;
+            color: #FFFFFE;
+        }
+    </style>
+</head>
+<body>
+    <script src="./grids.js"></script>
+</body>
+</html>
