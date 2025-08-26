@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* table, tr, th, td{
+            border: 2px solid;
+            border-collapse: collapse;
+        }
+
+        table{
+            width: 100%;
+        }
+
+        th, td{
+            padding:10px;
+        }
+
+        img{
+            width: 100%;
+        } */
+
+        body{
+            background-color: white;
+            margin: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        thead{
+            background-color: rgb(71, 71, 71);
+            color: white;
+        }
+
+        th{
+            padding: 15px;
+            text-align: left;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+        }
+
+        th,td{
+            padding: 10px;
+            padding: 12px 15px;
+            border-bottom: 1px solid;
+        }
+
+        tbody tr{
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        tbody tr:hover{
+            background-color: beige;
+            transform: translateX(5px);
+        }
+
+        tbody tr:last-child td{
+            border-bottom: none;
+        }
+
+        img{
+            max-width: 100px;
+            height: auto;
+            border-radius: 4px;
+            transition: transform 0.3s;
+            mix-blend-mode: multiply;
+            object-fit: contain;
+        }
+
+        img:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <script src="./index.js"></script>
+</body>
+</html>
