@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- for 3rd case -->
+    <style>
+        #cnt{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 10px;
+        }
+
+        #cnt>div{
+            border: 2px solid;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #cnt>div>h2{
+            color: rgb(77, 76, 76);
+        }
+
+        #cnt>div>p{
+            font-size: 1.2rem;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <div id="text">Hello World</div>
+
+    <!-- 2 -->
+    <div id="container"></div>
+
+    <!-- 3 -->
+    <div id="cnt"></div>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>

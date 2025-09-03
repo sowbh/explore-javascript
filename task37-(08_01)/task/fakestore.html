@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Fullscreen loader */
+        #loader {
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(to right, #2d3014, #555424);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            flex-direction: column;
+            color: #fff;
+            font-size: 18px;
+            gap: 12px;
+        }
+
+        .spinner {
+            width: 60px;
+            height: 60px;
+            border: 6px solid rgba(255, 255, 255, 0.2);
+            border-top-color: #46c2ff;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Hide table until data loads */
+        table {
+            display: none;
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        thead th {
+            background: #1f2a44;
+            color: #fff;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f4f6f9;
+        }
+
+        tbody tr:hover {
+            background: #eef4ff;
+        }
+
+        img {
+            width: 80px;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="loader">
+        <div class="spinner"></div>
+        <div>Loading...</div>
+    </div>
+
+
+    <script src="./fakestore.js"></script>
+</body>
+
+</html>
